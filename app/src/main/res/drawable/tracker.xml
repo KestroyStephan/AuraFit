@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="50dp"
+    android:height="50dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <path
+        android:strokeColor="#FAFAFA"
+        android:strokeWidth="1.91"
+        android:strokeMiterLimit="10"
+        android:pathData="M 14.15 22.5 L 3.41 22.5 L 3.41 1.5 L 20.59 1.5 L 20.59 22.5 L 14.15 22.5 Z" />
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.91"
+        android:strokeMiterLimit="10"
+        android:pathData="M 6.27 11.05 L 8.18 11.05" />
+    <path
+        android:strokeColor="#FAFAFA"
+        android:strokeWidth="1.91"
+        android:strokeMiterLimit="10"
+        android:pathData="M 10.09 11.05 L 17.73 11.05" />
+    <path
+        android:strokeColor="#F3F3F6"
+        android:strokeWidth="1.91"
+        android:strokeMiterLimit="10"
+        android:pathData="M 6.27 14.86 L 8.18 14.86" />
+    <path
+        android:strokeColor="#F8F8FA"
+        android:strokeWidth="1.91"
+        android:strokeMiterLimit="10"
+        android:pathData="M 10.09 14.86 L 17.73 14.86" />
+    <path
+        android:strokeColor="#FBFBFD"
+        android:strokeWidth="1.91"
+        android:strokeMiterLimit="10"
+        android:pathData="M 6.27 18.68 L 8.18 18.68" />
+    <path
+        android:strokeColor="#FFFEFE"
+        android:strokeWidth="1.91"
+        android:strokeMiterLimit="10"
+        android:pathData="M 10.09 18.68 L 17.73 18.68" />
+    <path
+        android:strokeColor="#F6F6F6"
+        android:strokeWidth="1.91"
+        android:strokeMiterLimit="10"
+        android:pathData="M 7.23 6.27 L 16.77 6.27" />
+    <path
+        android:strokeColor="#F9F9FA"
+        android:strokeWidth="1.91"
+        android:strokeMiterLimit="10"
+        android:pathData="M 9.14 4.36 L 9.14 8.18" />
+    <path
+        android:strokeColor="#FBFBFB"
+        android:strokeWidth="1.91"
+        android:strokeMiterLimit="10"
+        android:pathData="M 14.86 4.36 L 14.86 8.18" />
+</vector>

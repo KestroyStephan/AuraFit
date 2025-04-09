@@ -82,7 +82,7 @@ public class LoginActivity extends AppCompatActivity {
         auth.signInWithEmailAndPassword(email, pass)
                 .addOnSuccessListener(authResult -> {
                     Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(this, MainActivity.class));
+                    startActivity(new Intent(this, HomeActivity.class));
                     finish();
                 })
                 .addOnFailureListener(e -> Toast.makeText(this, "Login Failed: " + e.getMessage(), Toast.LENGTH_SHORT).show());
@@ -152,7 +152,7 @@ public class LoginActivity extends AppCompatActivity {
                             .addOnCompleteListener(this, task1 -> {
                                 if (task1.isSuccessful()) {
                                     Toast.makeText(this, "Google Sign-In Success", Toast.LENGTH_SHORT).show();
-                                    startActivity(new Intent(this, MainActivity.class));
+                                    startActivity(new Intent(this, HomeActivity.class));
                                     finish();
                                 } else {
                                     Toast.makeText(this, "Firebase Auth Failed", Toast.LENGTH_SHORT).show();
