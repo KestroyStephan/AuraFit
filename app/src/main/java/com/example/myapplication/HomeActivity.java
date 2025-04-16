@@ -61,7 +61,7 @@ public class HomeActivity extends AppCompatActivity {
         stepCount.setOnClickListener(view -> startActivity(new Intent(HomeActivity.this, StepcounterActivity.class)));
         // Meal plane
         CardView mealPlane = findViewById(R.id.mealPlane);
-        mealPlane.setOnClickListener(view ->startActivity(new Intent(HomeActivity.this, Meal_plannerActivity.class)));
+        mealPlane.setOnClickListener(view ->startActivity(new Intent(HomeActivity.this, Meal_Planner_Activity.class)));
         // Progress
         CardView progress = findViewById(R.id.progress);
         progress.setOnClickListener(view -> startActivity(new Intent(HomeActivity.this, Analytics_screenActivity.class)));

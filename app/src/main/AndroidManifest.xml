@@ -5,6 +5,8 @@
 
     <!-- Permissions -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
 
     <application
         android:allowBackup="true"
@@ -26,12 +28,16 @@
             </intent-filter>
         </activity>
 
+        <!-- Add this line to fix the crash -->
+        <activity android:name=".DetailActivity" android:exported="true" />
+
         <!-- Other Activities -->
-        <activity android:name=".uploadActivity" android:exported="true" />
+        <activity android:name=".UpdateActivity" android:exported="false" />
+        <activity android:name=".UploadActivity" android:exported="true" />
         <activity android:name=".WorkoutActivity" android:exported="true" />
         <activity android:name=".StepcounterActivity" android:exported="true" />
         <activity android:name=".ProfileActivity" android:exported="true" />
-        <activity android:name=".Meal_plannerActivity" android:exported="true" />
+        <activity android:name=".Meal_Planner_Activity" android:exported="true" />
         <activity android:name=".Analytics_screenActivity" android:exported="true" />
         <activity android:name=".Live_workoutActivity" android:exported="true" />
         <activity android:name=".HomeActivity" android:exported="false" />
