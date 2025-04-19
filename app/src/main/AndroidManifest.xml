@@ -2,11 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.myapplication">
-
     <!-- Permissions -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.INTERNET"/>
-
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -24,27 +22,49 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- Add this line to fix the crash -->
-        <activity android:name=".DetailActivity" android:exported="true" />
-
-        <!-- Other Activities -->
-        <activity android:name=".UpdateActivity" android:exported="false" />
-        <activity android:name=".UploadActivity" android:exported="true" />
-        <activity android:name=".WorkoutActivity" android:exported="true" />
-        <activity android:name=".StepcounterActivity" android:exported="true" />
-        <activity android:name=".ProfileActivity" android:exported="true" />
-        <activity android:name=".Meal_Planner_Activity" android:exported="true" />
-        <activity android:name=".Analytics_screenActivity" android:exported="true" />
-        <activity android:name=".Live_workoutActivity" android:exported="true" />
-        <activity android:name=".HomeActivity" android:exported="false" />
-        <activity android:name=".LoginActivity" android:exported="true" />
-        <activity android:name=".SignUpActivity" android:exported="true" />
-        <activity android:name=".MainActivity" android:exported="false" />
-
+        </activity> <!-- Add this line to fix the crash -->
+        <activity
+            android:name=".DetailActivity"
+            android:exported="true" /> <!-- Other Activities -->
+        <activity
+            android:name=".UpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UploadActivity"
+            android:exported="true" />
+        <activity
+            android:name=".WorkoutActivity"
+            android:exported="true" />
+        <activity
+            android:name=".StepcounterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Meal_Planner_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Analytics_screenActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Live_workoutActivity"
+            android:exported="true" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

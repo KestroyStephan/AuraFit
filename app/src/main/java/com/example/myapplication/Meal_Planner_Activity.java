@@ -105,7 +105,7 @@ public class Meal_Planner_Activity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Meal_Planner_Activity.this, DetailActivity.class);
+                Intent intent = new Intent(Meal_Planner_Activity.this, UploadActivity.class);
                 startActivity(intent);
             }
         });
