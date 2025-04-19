@@ -58,7 +58,7 @@ public class HomeActivity extends AppCompatActivity {
         workoutTrack.setOnClickListener(view-> startActivity(new Intent(HomeActivity.this, LiveWorkoutActivity.class)));
         // Step Count
         CardView stepCount = findViewById(R.id.stepCount);
-        stepCount.setOnClickListener(view -> startActivity(new Intent(HomeActivity.this, StepcounterActivity.class)));
+        stepCount.setOnClickListener(view -> startActivity(new Intent(HomeActivity.this, StepCounter.class)));
         // Meal plane
         CardView mealPlane = findViewById(R.id.mealPlane);
         mealPlane.setOnClickListener(view ->startActivity(new Intent(HomeActivity.this, Meal_Planner_Activity.class)));
