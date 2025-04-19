@@ -61,7 +61,7 @@
             android:name=".Analytics_screenActivity"
             android:exported="true" />
         <activity
-            android:name=".Live_workoutActivity"
+            android:name=".LiveWorkoutActivity"
             android:exported="true" />
         <activity
             android:name=".HomeActivity"
