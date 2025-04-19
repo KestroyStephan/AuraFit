@@ -25,7 +25,8 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity> <!-- Add this line to fix the crash -->
+        </activity>
+        <!-- Add this line to fix the crash -->
         <activity
             android:name=".DetailActivity"
             android:exported="true" /> <!-- Other Activities -->
@@ -34,6 +35,15 @@
             android:exported="false" />
         <activity
             android:name=".UploadActivity"
+            android:exported="true" />
+        <activity
+            android:name=".WorkoutDetailsActivity"
+            android:exported="true" /> <!-- Other Activities -->
+        <activity
+            android:name=".WorkoutUpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WorkoutUploadActivity"
             android:exported="true" />
         <activity
             android:name=".WorkoutActivity"

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -7,4 +8,41 @@
     android:layout_height="match_parent"
     tools:context=".WorkoutActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Search bar for filtering workouts -->
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:id="@+id/searchWorkout"
+        app:iconifiedByDefault="false"
+        app:searchHintIcon="@null"
+        app:queryHint="Search workouts..."
+        android:focusable="false"
+        app:closeIcon="@drawable/clear_character_svgrepo_com"
+        app:searchIcon="@drawable/search_plus_svgrepo_com"
+        android:background="@drawable/custom_edittext"/>
+
+    <!-- RecyclerView for displaying the list of workouts -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/searchWorkout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerWorkout"
+        android:scrollbars="vertical"/>
+
+    <!-- Floating Action Button to add a new workout -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fabWorkout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="40dp"
+        android:src="@drawable/baseline_add_24"
+        android:backgroundTint="@color/lavender"
+        android:tint="@color/white"/>
+
+</RelativeLayout>
