@@ -30,7 +30,7 @@ public class WorkoutAdaptor extends RecyclerView.Adapter<WorkoutAdaptor.WorkoutV
     @NonNull
     @Override
     public WorkoutViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.recycler_item, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.recycler_workout_item, parent, false);
         return new WorkoutViewHolder(view);
     }
 
@@ -45,7 +45,7 @@ public class WorkoutAdaptor extends RecyclerView.Adapter<WorkoutAdaptor.WorkoutV
         Glide.with(context).load(currentWorkout.getDataImage()).into(holder.workoutImage);
 
         holder.workoutCard.setOnClickListener(v -> {
-            Intent intent = new Intent(context, WorkoutDetailsActivity.class); // Create this Activity
+            Intent intent = new Intent(context, WorkoutDetailsActivity.class);
             intent.putExtra("Title", currentWorkout.getDataTitle());
             intent.putExtra("Description", currentWorkout.getDataDesc());
             intent.putExtra("Language", currentWorkout.getDataLang());

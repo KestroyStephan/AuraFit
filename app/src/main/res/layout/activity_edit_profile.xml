@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pagebkg"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <!-- Profile Image -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/editProfileImage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/profile"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="center"
+            android:contentDescription="User Profile Image"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="2dp" />
+
+        <!-- Upload / Remove Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/btnUploadImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Image"
+                android:backgroundTint="@color/teal_700"
+                android:textColor="@android:color/white"
+                android:contentDescription="Upload new profile image" />
+
+            <Button
+                android:id="@+id/btnRemoveImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remove"
+                android:layout_marginStart="12dp"
+                android:backgroundTint="@color/design_default_color_error"
+                android:textColor="@android:color/white"
+                android:contentDescription="Remove profile image" />
+        </LinearLayout>
+
+        <!-- Name -->
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:padding="12dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/custom_edittext"
+            android:contentDescription="Enter your name" />
+
+        <!-- Age -->
+        <EditText
+            android:id="@+id/editAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Age"
+            android:inputType="number"
+            android:maxLines="1"
+            android:maxLength="3"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/custom_edittext"
+            android:contentDescription="Enter your age" />
+
+        <!-- Gender -->
+        <EditText
+            android:id="@+id/editGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Gender"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/custom_edittext"
+            android:contentDescription="Enter your gender" />
+
+        <!-- Weight -->
+        <EditText
+            android:id="@+id/editWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Weight (kg)"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/custom_edittext"
+            android:contentDescription="Enter your weight in kilograms" />
+
+        <!-- Height -->
+        <EditText
+            android:id="@+id/editHeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Height (cm)"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/custom_edittext"
+            android:contentDescription="Enter your height in centimeters" />
+
+        <!-- Update Button -->
+        <Button
+            android:id="@+id/updateBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Profile"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/teal_700"
+            android:textColor="@android:color/white"
+            android:contentDescription="Save profile updates" />
+
+    </LinearLayout>
+</ScrollView>

@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -17,7 +18,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AuraFit">
 
-        <!-- Splash Screen as Launcher -->
+
         <activity
             android:name=".activity_splashScreen"
             android:exported="true">
@@ -26,14 +27,16 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <!-- Add this line to fix the crash -->
+        </activity> <!-- Add this line to fix the crash -->
         <activity
             android:name=".DetailActivity"
             android:exported="true" />
         <activity
             android:name=".UpdateDailyLimitActivity"
-            android:exported="true" /> <!-- Other Activities -->
+            android:exported="true" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="false" />
         <activity
             android:name=".StepHistoryActivity"
             android:exported="true" />
@@ -45,7 +48,7 @@
             android:exported="true" />
         <activity
             android:name=".WorkoutDetailsActivity"
-            android:exported="true" /> <!-- Other Activities -->
+            android:exported="true" />
         <activity
             android:name=".WorkoutUpdateActivity"
             android:exported="false" />
@@ -65,7 +68,7 @@
             android:name=".Meal_Planner_Activity"
             android:exported="true" />
         <activity
-            android:name=".Analytics_screenActivity"
+            android:name=".StepAnalyticsActivity"
             android:exported="true" />
         <activity
             android:name=".LiveWorkoutActivity"

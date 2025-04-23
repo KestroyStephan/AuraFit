@@ -28,16 +28,16 @@ public class WorkoutActivity extends AppCompatActivity {
     RecyclerView recyclerWorkout;
     SearchView searchWorkout;
     List<DataClass> workoutList;
-    MyAdapter adapter;
+    WorkoutAdaptor adapter;
     DatabaseReference databaseReference;
     AlertDialog dialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_workout); // Make sure you create this layout
+        setContentView(R.layout.activity_workout);
 
-        recyclerWorkout = findViewById(R.id.recyclerWorkout); // Make sure the ID matches in XML
+        recyclerWorkout = findViewById(R.id.recyclerWorkout);
         fabWorkout = findViewById(R.id.fabWorkout);
         searchWorkout = findViewById(R.id.searchWorkout);
         searchWorkout.clearFocus();
@@ -45,7 +45,7 @@ public class WorkoutActivity extends AppCompatActivity {
         GridLayoutManager layoutManager = new GridLayoutManager(this, 1);
         recyclerWorkout.setLayoutManager(layoutManager);
         workoutList = new ArrayList<>();
-        adapter = new MyAdapter(WorkoutActivity.this, workoutList);
+        adapter = new WorkoutAdaptor(WorkoutActivity.this, workoutList);
         recyclerWorkout.setAdapter(adapter);
 
         AlertDialog.Builder builder = new AlertDialog.Builder(WorkoutActivity.this);

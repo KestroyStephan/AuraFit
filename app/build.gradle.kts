@@ -42,10 +42,9 @@ dependencies {
     // Firebase + Auth + Google Sign-In
     implementation("com.google.firebase:firebase-auth:22.3.0")
     implementation("com.google.firebase:firebase-database:21.0.0")
-    implementation("com.google.firebase:firebase-firestore:24.10.0")
+    implementation("com.google.firebase:firebase-firestore:25.1.3") // Use only one version
     implementation("com.google.android.gms:play-services-auth:20.7.0")
-    implementation ("com.google.firebase:firebase-firestore:25.1.3")
-    implementation ("com.google.firebase:firebase-storage:21.0.1")
+    implementation("com.google.firebase:firebase-storage:21.0.1")
 
     implementation(libs.credentials)
     implementation(libs.credentials.play.services.auth)
@@ -57,11 +56,14 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
 
+    // Image and UI Libraries
+    implementation("com.github.bumptech.glide:glide:4.14.2")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.14.2")
+    implementation("com.github.clans:fab:1.6.4")
+    implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
 
-    implementation ("com.github.bumptech.glide:glide:4.14.2")
-    annotationProcessor ("com.github.bumptech.glide:compiler:4.14.2")
-    implementation ("com.github.clans:fab:1.6.4")
+    // CircleImageView
+    implementation("de.hdodenhof:circleimageview:3.1.0")
 }
 
-// ✅ Must be at the end for Firebase to work
 apply(plugin = "com.google.gms.google-services")

@@ -26,7 +26,7 @@ public class WorkoutDetailsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_workout_detail); // Rename layout file accordingly
+        setContentView(R.layout.activity_workout_detail);
 
         detailDesc = findViewById(R.id.detailDesc);
         detailImage = findViewById(R.id.detailImage);

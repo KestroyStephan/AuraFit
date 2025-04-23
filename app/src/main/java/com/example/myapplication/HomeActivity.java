@@ -37,7 +37,7 @@ public class HomeActivity extends AppCompatActivity {
         textViewName.setText("Hello ,"+storedUsername);
 
         ImageView profile = findViewById(R.id.imageViewProfile);
-        profile.setOnClickListener(view -> startActivity(new Intent(HomeActivity.this, ProfileActivity.class)));
+        profile.setOnClickListener(view -> startActivity(new Intent(HomeActivity.this, com.example.myapplication.ProfileActivity.class)));
 
         // logout
         CardView exit = findViewById(R.id.logout);
@@ -64,6 +64,6 @@ public class HomeActivity extends AppCompatActivity {
         mealPlane.setOnClickListener(view ->startActivity(new Intent(HomeActivity.this, Meal_Planner_Activity.class)));
         // Progress
         CardView progress = findViewById(R.id.progress);
-        progress.setOnClickListener(view -> startActivity(new Intent(HomeActivity.this, Analytics_screenActivity.class)));
+        progress.setOnClickListener(view -> startActivity(new Intent(HomeActivity.this, StepAnalyticsActivity.class)));
     }
 }
