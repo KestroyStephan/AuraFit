@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="signup_email" type="id" />
+    <item name="signup_password" type="id" />
+    <item name="signup_button" type="id" />
+    <item name="loginRedirectText" type="id" />
+</resources>

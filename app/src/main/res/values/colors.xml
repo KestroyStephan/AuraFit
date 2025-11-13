@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#3CE2C9</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="lavender">#9C78E6</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#c70000</color>
+    <color name="green">#00ff00</color>
+    <color name="Blue_500">#2196F3</color>     <!-- Primary Blue -->
+    <color name="Green_500">#4CAF50</color>    <!-- Positive (Steps met) -->
+    <color name="Red_500">#F44336</color>      <!-- Alert/Exceeded Limit -->
+    <color name="Amber_500">#FFC107</color>
+    <color name="Indigo_900">#1A237E</color>
+
+    <color name="colorPrimary">#2196F3</color>        <!-- Bright Blue -->
+    <color name="colorPrimaryDark">#1976D2</color>    <!-- Deeper Blue -->
+    <color name="colorAccent">#FF5722</color>         <!-- Energetic Orange -->
+    <color name="colorBackground">#F5F5F5</color>     <!-- Light Gray Background -->
+    <color name="colorTextPrimary">#212121</color>    <!-- Dark Text -->
+    <color name="colorTextSecondary">#757575</color>  <!-- Light Text -->
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorStepGreen">#4CAF50</color>      <!-- Step Count Green -->
+    <color name="colorLimitRed">#F44336</color>       <!-- Warning Red -->
+
+</resources>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="default_web_client_id">your-web-client-id-from-firebase</string>
+    <string name="_Fitness_Tracker">AuraFit</string>
+    <string name="hello">Hello ,</string>
+    <string name="after_hello_text">How do you feel today?</string>
+    <string name="workout">WORKOUT</string>
+    <string name="liveworkout">LIVE WORKOUT</string>
+    <string name="step_count">STEP COUNT</string>
+    <string name="meal_plane">MEAL PLANNER</string>
+    <string name="Analytics_Screen">Progress</string>
+    <string name="log_out">LOG OUT</string>
+    <string name="Name">Name</string>
+    <string name="Gender">Gender</string>
+    <string name="Age">Age</string>
+    <string name="Height">Height</string>
+    <string name="Weight">Weight</string>
+
+</resources>

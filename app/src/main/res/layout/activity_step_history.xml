@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/pagebkg"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/historyTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Step History"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/Indigo_900"
+        android:paddingBottom="12dp" />
+
+    <ListView
+        android:id="@+id/historyListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/Amber_500"
+        android:dividerHeight="1dp" />
+</LinearLayout>

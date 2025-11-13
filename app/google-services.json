@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "300231650796",
+    "project_id": "personal-fitness-tracker-1",
+    "storage_bucket": "personal-fitness-tracker-1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300231650796:android:aaae6cc6d86ee52b94e4c9",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA87PtJ0ww2W82KVGiy4_whFEVExV0ZotI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300231650796:android:879d68543a87fbaa94e4c9",
+        "android_client_info": {
+          "package_name": "com.example.personalfitnesstracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA87PtJ0ww2W82KVGiy4_whFEVExV0ZotI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
